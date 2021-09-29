@@ -37,11 +37,25 @@
 			
 		}
 		
-		li {
+		/* li {
 		
 			width: inherit;
 			overflow: auto;
 		
+		} */
+		
+		div.li-div1 {
+		
+			overflow: auto;
+			
+		}
+		
+		div.li-div2::after {
+			
+			content: "";
+  			clear: both;
+  			display: table;	
+			
 		}
 		
 		div.li-img {
@@ -91,6 +105,7 @@
 			<h2>My List</h2>
 			<ul>
 				<li>
+				<div class="li-div1">
 					<div class="li-img">
 						<img src="https://www.svgrepo.com/show/26996/avatar.svg" alt="alt-avatar" class="li-img" />
 					</div>
@@ -103,9 +118,11 @@
 						</p class="li-timestamp">
 						<p>01/01/2020</p>
 					</div>
+				</div>
 				</li>
 				
 				<li>
+				<div class="li-div2">
 					<div class="li-img">
 						<img src="https://www.svgrepo.com/show/26996/avatar.svg" alt="alt-avatar" class="li-img" />
 					</div>
@@ -118,6 +135,7 @@
 						</p class="li-timestamp">
 						<p>01/01/2020</p>
 					</div>
+				</div>
 				</li>
 			
 				<li>

@@ -32,52 +32,50 @@
 		}
 		
 		ul {
-		
+			display: grid;
 			max-width: 800px;
-			
+			grid-template-columns: auto auto;
+			grid-gap: 50px 20px;
+			padding: 0px 10px;	
 		}
 		
-		/* li {
+			.li {
+				padding: 20px;
+				font-size: 30px;
+				text-align: center;
+			}
 		
-			width: inherit;
-			overflow: auto;
 		
-		} 
-		
-		div.li-div1 {
-		
-			overflow: auto;
-			
+		.li-card {
+			display: table;	
 		}
 		
-		div.li-div2::after {
-			
-			content: "";
-  			clear: both;
-  			display: table;	
-			
-		} */
+			.li-card-cell {
+				display: table-cell;
+				padding: 15px;
+			}
 		
-		span.li-img {
-			
-			background-color: white;
-			width: 120px;
-			float: left;
-			
-		} 
+				div.li-img {
+					background: white;
+					width: 20%;
+					vertical-align: middle;
+					border-radius: 0px 0px 20px 20px;
+				}
 		
-		img.li-img {
-			
-			border-radius: 100%;
-			width: 100px;
-		}
+					.li-img {
+						display: block;
+						width: 80%;
+						min-width: 40px;
+						margin: auto;
+						border-radius: 100%;
+					}	
 		
-		span.li-text {
-		
-			float:left;
-			background-color: maroon; 
-			
-		}
+				div.li-text {
+					background: #400E4E;
+					width: 80%;
+					vertical-align: top;
+					border-radius: 20px 20px 0px 0px;
+				}
 		
 
 	</style> 
@@ -101,160 +99,142 @@
 
 	<section class="s2">
 		<div>
-			<h2>My List</h2>
+			<h2 class="text">My List</h2>
 			<ul>
 				<li>
-				<div class="li-div1">
-					<span class="li-img">
+				<div class="li-card li-content-1">
+					<div class="li-card-cell li-img">
 						<img src="https://www.svgrepo.com/show/26996/avatar.svg" alt="alt-avatar" class="li-img" />
-					</span>
-					<span class="li-text">
-						<p class="li-header">my first thing</p>
-						<p class="li-body">
+					</div>
+					<div class="li-card-cell li-text">
+						<p class="text li-text li-header">my first thing</p>
+						<p class="text li-text li-body">
 							Lorem ipsum is placeholder text commonly used in the graphic,
 							print, and publishing industries for previewing layouts and
 							visual mockups.
-						</p class="li-timestamp">
-						<p>01/01/2020</p>
-					</span>
+						</p>
+						<p class="text li-text li-timestamp">01/01/2020</p>
+					</div>
 				</div>
 				</li>
 				
 				<li>
-				<div class="li-div2">
-					<div class="li-img">
+				<div class="li-card li-content-2">
+					<div class="li-card-cell li-img">
 						<img src="https://www.svgrepo.com/show/26996/avatar.svg" alt="alt-avatar" class="li-img" />
 					</div>
-					<div class="li-text">
-						<p class="li-header">my second thing</p>
-						<p class="li-body">
+					<div class="li-card-cell li-text">
+						<p class="text li-text li-header">my second thing</p>
+						<p class="text li-text li-body">
 							Lorem ipsum is placeholder text commonly used in the graphic,
 							print, and publishing industries for previewing layouts and
 							visual mockups.
-						</p class="li-timestamp">
-						<p>01/01/2020</p>
+						</p>
+						<p class="text li-text li-timestamp">01/01/2020</p>
 					</div>
 				</div>
 				</li>
 			
-				<li>
-					<div class="li-img">
+								<li>
+				<div class="li-card li-content-1">
+					<div class="li-card-cell li-img">
 						<img src="https://www.svgrepo.com/show/26996/avatar.svg" alt="alt-avatar" class="li-img" />
 					</div>
-					<div class="li-text">
-						<p class="li-header">my first thing</p>
-						<p class="li-body">
+					<div class="li-card-cell li-text">
+						<p class="text li-text li-header">my first thing</p>
+						<p class="text li-text li-body">
 							Lorem ipsum is placeholder text commonly used in the graphic,
 							print, and publishing industries for previewing layouts and
 							visual mockups.
-						</p class="li-timestamp">
-						<p>01/01/2020</p>
+						</p>
+						<p class="text li-text li-timestamp">01/01/2020</p>
 					</div>
+				</div>
 				</li>
 				
 				<li>
-					<div class="li-img">
+				<div class="li-card li-content-2">
+					<div class="li-card-cell li-img">
 						<img src="https://www.svgrepo.com/show/26996/avatar.svg" alt="alt-avatar" class="li-img" />
 					</div>
-					<div class="li-text">
-						<p class="li-header">my second thing</p>
-						<p class="li-body">
+					<div class="li-card-cell li-text">
+						<p class="text li-text li-header">my second thing</p>
+						<p class="text li-text li-body">
 							Lorem ipsum is placeholder text commonly used in the graphic,
 							print, and publishing industries for previewing layouts and
 							visual mockups.
-						</p class="li-timestamp">
-						<p>01/01/2020</p>
+						</p>
+						<p class="text li-text li-timestamp">01/01/2020</p>
 					</div>
+				</div>
+				</li>
+				
+								<li>
+				<div class="li-card li-content-1">
+					<div class="li-card-cell li-img">
+						<img src="https://www.svgrepo.com/show/26996/avatar.svg" alt="alt-avatar" class="li-img" />
+					</div>
+					<div class="li-card-cell li-text">
+						<p class="text li-text li-header">my first thing</p>
+						<p class="text li-text li-body">
+							Lorem ipsum is placeholder text commonly used in the graphic,
+							print, and publishing industries for previewing layouts and
+							visual mockups.
+						</p>
+						<p class="text li-text li-timestamp">01/01/2020</p>
+					</div>
+				</div>
+				</li>
+				
+				<li>
+				<div class="li-card li-content-2">
+					<div class="li-card-cell li-img">
+						<img src="https://www.svgrepo.com/show/26996/avatar.svg" alt="alt-avatar" class="li-img" />
+					</div>
+					<div class="li-card-cell li-text">
+						<p class="text li-text li-header">my second thing</p>
+						<p class="text li-text li-body">
+							Lorem ipsum is placeholder text commonly used in the graphic,
+							print, and publishing industries for previewing layouts and
+							visual mockups.
+						</p>
+						<p class="text li-text li-timestamp">01/01/2020</p>
+					</div>
+				</div>
 				</li>
 			
-				<li>
-					<div class="li-img">
+								<li>
+				<div class="li-card li-content-1">
+					<div class="li-card-cell li-img">
 						<img src="https://www.svgrepo.com/show/26996/avatar.svg" alt="alt-avatar" class="li-img" />
 					</div>
-					<div class="li-text">
-						<p class="li-header">my first thing</p>
-						<p class="li-body">
+					<div class="li-card-cell li-text">
+						<p class="text li-text li-header">my first thing</p>
+						<p class="text li-text li-body">
 							Lorem ipsum is placeholder text commonly used in the graphic,
 							print, and publishing industries for previewing layouts and
 							visual mockups.
-						</p class="li-timestamp">
-						<p>01/01/2020</p>
+						</p>
+						<p class="text li-text li-timestamp">01/01/2020</p>
 					</div>
+				</div>
 				</li>
 				
 				<li>
-					<div class="li-img">
+				<div class="li-card li-content-2">
+					<div class="li-card-cell li-img">
 						<img src="https://www.svgrepo.com/show/26996/avatar.svg" alt="alt-avatar" class="li-img" />
 					</div>
-					<div class="li-text">
-						<p class="li-header">my second thing</p>
-						<p class="li-body">
+					<div class="li-card-cell li-text">
+						<p class="text li-text li-header">my second thing</p>
+						<p class="text li-text li-body">
 							Lorem ipsum is placeholder text commonly used in the graphic,
 							print, and publishing industries for previewing layouts and
 							visual mockups.
-						</p class="li-timestamp">
-						<p>01/01/2020</p>
+						</p>
+						<p class="text li-text li-timestamp">01/01/2020</p>
 					</div>
-				</li>
-
-				<li>
-					<div class="li-img">
-						<img src="https://www.svgrepo.com/show/26996/avatar.svg" alt="alt-avatar" class="li-img" />
-					</div>
-					<div class="li-text">
-						<p class="li-header">my first thing</p>
-						<p class="li-body">
-							Lorem ipsum is placeholder text commonly used in the graphic,
-							print, and publishing industries for previewing layouts and
-							visual mockups.
-						</p class="li-timestamp">
-						<p>01/01/2020</p>
-					</div>
-				</li>
-				
-				<li>
-					<div class="li-img">
-						<img src="https://www.svgrepo.com/show/26996/avatar.svg" alt="alt-avatar" class="li-img" />
-					</div>
-					<div class="li-text">
-						<p class="li-header">my second thing</p>
-						<p class="li-body">
-							Lorem ipsum is placeholder text commonly used in the graphic,
-							print, and publishing industries for previewing layouts and
-							visual mockups.
-						</p class="li-timestamp">
-						<p>01/01/2020</p>
-					</div>
-				</li>
-
-				<li>
-					<div class="li-img">
-						<img src="https://www.svgrepo.com/show/26996/avatar.svg" alt="alt-avatar" class="li-img" />
-					</div>
-					<div class="li-text">
-						<p class="li-header">my first thing</p>
-						<p class="li-body">
-							Lorem ipsum is placeholder text commonly used in the graphic,
-							print, and publishing industries for previewing layouts and
-							visual mockups.
-						</p class="li-timestamp">
-						<p>01/01/2020</p>
-					</div>
-				</li>
-				
-				<li>
-					<div class="li-img">
-						<img src="https://www.svgrepo.com/show/26996/avatar.svg" alt="alt-avatar" class="li-img" />
-					</div>
-					<div class="li-text">
-						<p class="li-header">my second thing</p>
-						<p class="li-body">
-							Lorem ipsum is placeholder text commonly used in the graphic,
-							print, and publishing industries for previewing layouts and
-							visual mockups.
-						</p class="li-timestamp">
-						<p>01/01/2020</p>
-					</div>
+				</div>
 				</li>
 				
 			</ul>
